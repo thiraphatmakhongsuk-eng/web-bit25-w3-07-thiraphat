@@ -78,6 +78,22 @@
         button:hover {
             background-color: #2980b9;
         }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -142,4 +158,12 @@
     </form>
 
 </body>
+
+<footer>
+    <div class="footer">
+        <p>&copy; <?= date("Y") ?> GAME SHOP. All Rights Reserved.</p>
+        <p>จัดทำโดย <a href="#">นาย ธีรภัทร มะคงสุข BIT2/5</p>
+    </div>
+</footer>
+
 </html>

@@ -5,12 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ร้านเกม - ปรับแต่ง</title>
 <style>
-        body {
-            font-family: "Tahoma", sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: "Tahoma", sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
         .navbar {
             background-color: #2c3e50;
@@ -105,6 +108,23 @@
         .btn-delete:hover {
             background-color: #c0392b;
         }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -165,4 +185,11 @@
 </table>
 
 </body>
+
+<footer>
+    <div class="footer">
+        <p>&copy; <?= date("Y") ?> GAME SHOP. All Rights Reserved.</p>
+        <p>จัดทำโดย <a href="#">นาย ธีรภัทร มะคงสุข BIT2/5</p>
+    </div>
+</footer>
 </html>
